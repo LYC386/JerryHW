@@ -1,0 +1,16 @@
+<h1><td align="center">個人資料</td></h1>
+{% for r in name %}
+  <table class="table">
+    <tr>
+        <th>姓名</th>
+        <th>生日</th>
+        <th>性別</th>
+    </tr>
+    <tr>
+        <td>{{ r.name }}</td>
+        <td>{{ r.birthday }}</td>
+        <td>{{ r.gender }}</td>
+        
+    </tr>
+  </table>
+  {% endfor %}
