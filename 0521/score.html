@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input type="number" name="score" id="num_score"placeholder="請輸入成績">
+	<input type="button" name="bt_input" value="GO!" onclick="fn_pass()" >
+	<p id="result"></p>
+
+
+	<script>
+		function fn_pass(){
+			var x = parseFloat(document.getElementById("num_score").value);
+			if(x>=60){
+				document.getElementById("result").innerHTML="恭喜你及格了";
+			}else{
+				document.getElementById("result").innerHTML="YOU FAILED!"
+			}
+
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		input {
+			
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<form align="center">
+		<input id="x"type="number" name="x" ><br>
+		<!--input id="ca" type="text" name="cal"-->
+		
+		
+
+		<input id="y" type="number" name="y" ><br>
+		<input type="button" name="bt_plues" value="➕" onclick="f_plus()"  >
+		<input type="button" name="bt_minus" value="➖" onclick="f_minus()"  >
+		<input type="button" name="bt_multiple" value="✖️" onclick="f_multi()"  >
+		<input type="button" name="bt_divide" value="➗" onclick="f_div()" ><br>
+		<input type="button" value="c" onclick="clea()" >
+		<p id="result" ></p>
+
+	</form>
+
+	<script>
+		
+		function f_plus() {
+			
+			
+			var x = parseFloat(document.getElementById("x").value);
+			var y = parseFloat(document.getElementById("y").value);
+			document.getElementById("result").innerHTML=x+y;	
+			
+		}
+
+		function f_minus() {
+			
+			
+			var x = parseFloat(document.getElementById("x").value);
+			var y = parseFloat(document.getElementById("y").value);
+			document.getElementById("result").innerHTML=x-y;	
+			
+		}
+
+		function f_multi() {
+			
+			
+			var x = parseFloat(document.getElementById("x").value);
+			var y = parseFloat(document.getElementById("y").value);
+			document.getElementById("result").innerHTML=x*y;	
+			
+		}
+		function f_div() {
+			
+			
+			var x = parseFloat(document.getElementById("x").value);
+			var y = parseFloat(document.getElementById("y").value);
+			document.getElementById("result").innerHTML=x/y;	
+			
+		}
+
+		function clea(){
+			
+			document.getElementById("x").value=""
+			document.getElementById("y").value=""
+			document.getElementById("result").innerHTML = ""
+
+
+		}
+		
+		
+	</script>
+
+</body>
+</html>
